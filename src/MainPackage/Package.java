@@ -2,6 +2,7 @@ package MainPackage;
 
 public class Package {
 
-    private float mass;
+    private String pDescription;
+    private float pMass;
 
 }

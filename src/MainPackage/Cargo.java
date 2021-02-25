@@ -1,5 +1,7 @@
 package MainPackage;
 
+import java.util.HashSet;
+
 public class Cargo {
 
     enum Category {
@@ -9,8 +11,18 @@ public class Cargo {
         Other
     }
 
-    private String description;
-    Warehouse AssignedWarehouse;
 
+    private String cDescription;
+    private float cMass;
+    HashSet<Package> cPackages = new HashSet<>();
 
+    Cargo(String description) {
+        this.cDescription = description;
+    }
+
+    @Override
+    public String toString() {
+        return '\'' + cDescription + '\'' +
+                ", Cargo mass=" + cMass;
+    }
 }
