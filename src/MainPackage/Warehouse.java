@@ -3,9 +3,11 @@ package MainPackage;
 public class Warehouse {
 
     private String location;
+    private double capacity;
 
-    Warehouse(String loc) {
-        this.location = loc;
+    Warehouse(String location, double capacity) {
+        this.location = location;
+        this.capacity = capacity;
     }
 
 
