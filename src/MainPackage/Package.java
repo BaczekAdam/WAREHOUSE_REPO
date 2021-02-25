@@ -3,6 +3,11 @@ package MainPackage;
 public class Package {
 
     private String pDescription;
-    private float pMass;
+    public float pMass;
+
+    Package(String description, float mass) {
+        this.pDescription = description;
+        this.pMass = mass;
+    }
 
 }
