@@ -36,12 +36,12 @@ public class Main {
         war1.AddCargo(cargo2);
 
 
-        //System.out.println(war1.toString());
+        System.out.println(war1.toString());
 
-        //war1.moveCargoToAnotherWarehouse(cargo2,war2);
+        war1.moveCargoToAnotherWarehouse(cargo2,war2);
 
-        //System.out.println(war1.toString());
-        //System.out.println(war2.toString());
+        System.out.println(war1.toString());
+        System.out.println(war2.toString());
 
     }
 }

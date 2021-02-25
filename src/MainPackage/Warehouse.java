@@ -18,7 +18,7 @@ public class Warehouse {
     public boolean AddCargo(Cargo addedCargo) {
         boolean added = false;
 
-        if (calculateMass() < maxCapacity) {
+        if (calculateMass() + addedCargo.cMass < maxCapacity) {
             cargoList.add(addedCargo);
             added = true;
         } else
